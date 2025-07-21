@@ -1,40 +1,43 @@
-# ✋ Real-Time Hand Detection System with YOLOv5 & Flask
+# ✋ Real-Time Hand Detection System using YOLOv5 & Flask
 
-Sistem ini merupakan aplikasi deteksi tangan secara real-time menggunakan YOLOv5 dan kamera live, yang diintegrasikan dengan Flask untuk tampilan web. Cocok untuk pengembangan sistem interaksi berbasis gesture, keamanan, atau kontrol tanpa sentuhan (touchless).
+Created by **Putri Yuliana Chairiah Azmi**  
+*(Politeknik Caltex Riau)*
 
----
-
-## 🚀 Fitur Unggulan
-
-- 🔍 **Deteksi Tangan Real-Time**  
-  Menggunakan YOLOv5 yang telah dilatih pada dataset tangan untuk pendeteksian akurat dan cepat.
-
-- 📸 **Capture dan Simpan Output**  
-  Gambar hasil deteksi disimpan otomatis ke folder `static`.
+This project is a real-time hand detection system powered by YOLOv5 and live camera input. It uses Flask as the web framework to stream the detection output directly to a browser. Suitable for gesture-based interaction systems, touchless control, or security applications.
 
 ---
 
-## 🛠 Teknologi & Tools
+## 🚀 Key Features
 
-| Teknologi | Deskripsi |
-|-----------|-----------|
-| Python 3.x | Bahasa pemrograman utama |
-| YOLOv5 | Model deteksi objek |
-| Flask | Framework web ringan |
-| OpenCV | Pengolahan video dan gambar |
-| PyTorch | Library deep learning untuk YOLOv5 |
+- 🔍 **Real-Time Hand Detection**  
+  Utilizes a custom-trained YOLOv5 model for fast and accurate hand detection.
+
+- 📸 **Capture and Save Output**  
+  Automatically saves the detection image into the `static/` folder.
 
 ---
 
-## 📁 Struktur Proyek
+## 🛠 Technologies Used
+
+| Technology | Description |
+|------------|-------------|
+| Python 3.x | Main programming language |
+| YOLOv5     | Object detection model |
+| Flask      | Lightweight web framework |
+| OpenCV     | Real-time image and video processing |
+| PyTorch    | Deep learning library (used by YOLOv5) |
+
+---
+
+## 📁 Project Structure
 
 ```bash
 .
-├── app.py                # Endpoint utama Flask
-├── detect.py             # Logika deteksi tangan
-├── yolov5/               # Model YOLOv5 custom
+├── app.py                # Main Flask application
+├── detect.py             # YOLOv5 detection logic
+├── yolov5/               # YOLOv5 custom model directory
 ├── static/
-│   └── result.jpg        # Output hasil deteksi
+│   └── result.jpg        # Output detection image
 ├── templates/
-│   └── index.html        # Antarmuka pengguna
-└── requirements.txt      # Daftar dependensi Python
+│   └── index.html        # Front-end web interface
+└── requirements.txt      # Python dependencies
