@@ -69,7 +69,7 @@ python app.py
 6. Open the Web Interface
 Go to your browser and visit:
 ```cpp
-http://127.0.0.1:5000
+[http://127.0.0.1:10000]
 ```
 7. View & Save Results
 - Detected frame is displayed in the browser.
