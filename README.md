@@ -41,3 +41,30 @@ This project is a real-time hand detection system powered by YOLOv5 and live cam
 ├── templates/
 │   └── index.html        # Front-end web interface
 └── requirements.txt      # Python dependencies
+---
+
+## ⚙️ How to Run (Step-by-Step)
+1. Clone the Repository
+git clone https://github.com/yourusername/detect_tangan.git
+cd detect_tangan
+2. (Optional) Create a Virtual Environment
+python -m venv venv
+source venv/bin/activate       # On Windows: venv\Scripts\activate
+3. Install Required Python Packages
+pip install -r requirements.txt
+4. Prepare YOLOv5 Model
+- Place your trained model file (e.g., best.pt) into the yolov5/ directory.
+- that detect.py is pointing to the correct path for the model.
+5. Run the Flask App
+python app.py
+6. Open the Web Interface
+Go to your browser and visit:
+http://127.0.0.1:5000
+7. View & Save Results
+- Detected frame is displayed in the browser.
+- Captured output is saved automatically to the static/ folder.
+
+## 🧠 Dataset & Model Info
+Dataset: Collected and labeled via Roboflow with hand annotations in YOLO format.
+
+Model: YOLOv5 custom-trained for hand detection tasks.
